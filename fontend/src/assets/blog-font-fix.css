@@ -1,0 +1,235 @@
+/* Blog Font Fix - Khắc phục vấn đề font chữ cho trang blog và bình luận */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+/* Global font fix for blog pages */
+.blogpage,
+.article-main,
+.article-details,
+.thump-comment {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  text-rendering: optimizeLegibility !important;
+}
+
+/* Article title fix */
+.article-main .article-title {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 2.5rem !important;
+  line-height: 1.2 !important;
+  color: #000 !important;
+  margin-bottom: 15px !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  text-rendering: optimizeLegibility !important;
+}
+
+/* Article content fix */
+.article-main .rte {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: 1.125rem !important;
+  line-height: 1.7 !important;
+  color: #333 !important;
+  font-weight: 400 !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  text-rendering: optimizeLegibility !important;
+}
+
+/* Time post fix */
+.article-main .time-post {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  color: #666 !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Comment form fix */
+.title-index {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: 1.75rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 30px !important;
+  color: #333 !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  text-rendering: optimizeLegibility !important;
+}
+
+/* Form controls fix */
+.article-main .form-group input,
+.article-main .form-group textarea {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Button fix */
+.article-main .button_45 {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Comment title fix */
+.title-form-coment {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: 1.25rem !important;
+  font-weight: 600 !important;
+  color: #333 !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Sidebar fix */
+.aside-content-blog .title-head-col {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: 1.25rem !important;
+  font-weight: 600 !important;
+  color: #cd9b32 !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+.aside-content-blog .nav-category ul .nav-item .nav-link {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  color: #333 !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Blog noibat fix */
+.blog_noibat h2 {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: 1.25rem !important;
+  font-weight: 600 !important;
+  color: #cd9b32 !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+.blog_noibat .blog_content .item .contentright h3 {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  color: #333 !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+.blog_noibat .blog_content .item .contentright h3 a {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-weight: 600 !important;
+  color: #333 !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Breadcrumb fix */
+.full-width-banner .title-bread-crumb {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  color: #cd9b32 !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  text-rendering: optimizeLegibility !important;
+}
+
+.full-width-banner .breadcrumb {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+.full-width-banner .breadcrumb li a,
+.full-width-banner .breadcrumb li span {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-weight: 400 !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Related news fix */
+.blog-lienquan .title-index {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: 1.75rem !important;
+  font-weight: 600 !important;
+  color: #333 !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+.item-blog .block-content h3 {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: 1.125rem !important;
+  font-weight: 600 !important;
+  color: #333 !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+.item-blog .block-content h3 a {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-weight: 600 !important;
+  color: #333 !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+.item-blog .block-content p {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: 0.95rem !important;
+  font-weight: 400 !important;
+  color: #666 !important;
+  line-height: 1.6 !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Responsive font sizes */
+@media (max-width: 768px) {
+  .article-main .article-title {
+    font-size: 2rem !important;
+  }
+  
+  .title-index {
+    font-size: 1.5rem !important;
+  }
+  
+  .full-width-banner .title-bread-crumb {
+    font-size: 2rem !important;
+  }
+  
+  .article-main .rte {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .article-main .article-title {
+    font-size: 1.75rem !important;
+  }
+  
+  .title-index {
+    font-size: 1.25rem !important;
+  }
+  
+  .full-width-banner .title-bread-crumb {
+    font-size: 1.75rem !important;
+  }
+} 

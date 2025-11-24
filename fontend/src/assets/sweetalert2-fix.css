@@ -1,0 +1,159 @@
+/* SweetAlert2 Fix - Khắc phục vấn đề modal không đóng */
+
+/* Đảm bảo modal SweetAlert2 có z-index cao nhất */
+.swal2-container {
+  z-index: 9999 !important;
+}
+
+/* Fix cho modal backdrop */
+.swal2-backdrop-show {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Đảm bảo modal content có thể tương tác */
+.swal2-popup {
+  pointer-events: auto !important;
+  user-select: none !important;
+}
+
+/* Fix cho modal animation */
+.swal2-show {
+  animation: swal2-show 0.3s !important;
+}
+
+.swal2-hide {
+  animation: swal2-hide 0.15s ease-out !important;
+}
+
+/* Đảm bảo modal có thể đóng bằng ESC */
+.swal2-popup:focus {
+  outline: none !important;
+}
+
+/* Fix cho modal timer */
+.swal2-timer-progress-bar {
+  background: #3085d6 !important;
+}
+
+/* Đảm bảo modal không bị che khuất */
+.swal2-popup.swal2-toast {
+  z-index: 10000 !important;
+}
+
+/* Fix cho modal buttons */
+.swal2-actions {
+  pointer-events: auto !important;
+}
+
+.swal2-confirm,
+.swal2-cancel {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+/* Cleanup cho modal khi ẩn */
+.swal2-container.swal2-shown:not(.swal2-backdrop-show) {
+  display: none !important;
+}
+
+/* Fix cho body scroll */
+body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
+  overflow: hidden !important;
+}
+
+/* Đảm bảo modal có thể đóng */
+.swal2-close {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+/* Fix cho modal content */
+.swal2-html-container {
+  pointer-events: auto !important;
+}
+
+/* Đảm bảo modal không bị che khuất bởi các element khác */
+.swal2-container[aria-hidden="true"] {
+  display: none !important;
+}
+
+/* Fix cho modal backdrop click */
+.swal2-backdrop {
+  pointer-events: auto !important;
+}
+
+/* Đảm bảo modal có thể đóng bằng click outside */
+.swal2-container.swal2-backdrop-show {
+  pointer-events: auto !important;
+}
+
+/* Fix cho modal animation */
+@keyframes swal2-show {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  45% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes swal2-hide {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
+/* Fix cho modal khi có lỗi */
+.swal2-error {
+  border-color: #f27474 !important;
+}
+
+.swal2-error .swal2-x-mark-line-left,
+.swal2-error .swal2-x-mark-line-right {
+  background-color: #f27474 !important;
+}
+
+/* Đảm bảo modal có thể đóng */
+.swal2-popup.swal2-toast.swal2-show {
+  animation: swal2-toast-show 0.3s !important;
+}
+
+.swal2-popup.swal2-toast.swal2-hide {
+  animation: swal2-toast-hide 0.15s ease-out !important;
+}
+
+@keyframes swal2-toast-show {
+  0% {
+    transform: translateY(-1em);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes swal2-toast-hide {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-1em);
+    opacity: 0;
+  }
+} 

@@ -1,0 +1,100 @@
+/* Modal Fix - Khắc phục vấn đề modal không mất đi */
+
+/* Đảm bảo modal backdrop được xử lý đúng */
+.modal-backdrop {
+  z-index: 1040 !important;
+}
+
+.modal {
+  z-index: 1050 !important;
+}
+
+/* Fix cho modal không mất đi */
+.modal:not(.show) {
+  display: none !important;
+}
+
+/* Xóa backdrop khi modal không hiển thị */
+.modal:not(.show) + .modal-backdrop {
+  display: none !important;
+}
+
+/* Cleanup body styles */
+body:not(.modal-open) {
+  overflow: auto !important;
+  padding-right: 0 !important;
+}
+
+/* Fix cho modal Bootstrap */
+.modal.fade:not(.show) {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Đảm bảo modal có thể đóng được */
+.modal.show {
+  display: block !important;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Fix cho modal backdrop click */
+.modal-backdrop.show {
+  opacity: 0.5;
+}
+
+/* Cleanup khi modal đóng */
+.modal.closing {
+  animation: modalFadeOut 0.15s ease-out;
+}
+
+@keyframes modalFadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+/* Fix cho Vue modal */
+[v-if="false"] {
+  display: none !important;
+}
+
+/* Đảm bảo modal không bị che khuất */
+.modal-dialog {
+  pointer-events: auto;
+}
+
+/* Fix cho modal content */
+.modal-content {
+  pointer-events: auto;
+}
+
+/* Cleanup cho các modal cũ */
+.modal-backdrop:not(.show) {
+  display: none !important;
+}
+
+/* Fix cho body scroll */
+body.modal-open {
+  overflow: hidden !important;
+}
+
+/* Đảm bảo modal có thể đóng bằng ESC */
+.modal:focus {
+  outline: none;
+}
+
+/* Fix cho modal animation */
+.modal.fade .modal-dialog {
+  transition: transform 0.3s ease-out;
+  transform: translate(0, -50px);
+}
+
+.modal.show .modal-dialog {
+  transform: none;
+} 

@@ -1,0 +1,303 @@
+/* Font Consistency for All User Pages */
+/* This file ensures consistent typography across all user pages */
+
+/* Import Google Fonts for better typography */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+/* Global font reset with !important to override Bootstrap */
+* {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+/* Body typography */
+body {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+  color: #333 !important;
+  background-color: #fff !important;
+  overflow-x: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  padding-top: 80px !important; /* Space for fixed header */
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  text-rendering: optimizeLegibility !important;
+  font-display: swap !important; /* Improve font loading performance */
+}
+
+/* Heading typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  margin-bottom: 0.5em !important;
+  color: #333 !important;
+  letter-spacing: -0.025em !important;
+}
+
+h1 { 
+  font-size: 2.5rem !important; 
+  font-weight: 700 !important;
+}
+h2 { 
+  font-size: 2rem !important; 
+  font-weight: 600 !important;
+}
+h3 { 
+  font-size: 1.75rem !important; 
+  font-weight: 600 !important;
+}
+h4 { 
+  font-size: 1.5rem !important; 
+  font-weight: 500 !important;
+}
+h5 { 
+  font-size: 1.25rem !important; 
+  font-weight: 500 !important;
+}
+h6 { 
+  font-size: 1rem !important; 
+  font-weight: 500 !important;
+}
+
+/* Paragraph typography */
+p {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: 1rem !important;
+  line-height: 1.6 !important;
+  margin-bottom: 1rem !important;
+  color: #555 !important;
+  font-weight: 400 !important;
+}
+
+/* Link typography */
+a {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-weight: 500 !important;
+}
+
+/* Form elements typography */
+input, textarea, select, button {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: 1rem !important;
+}
+
+/* Bootstrap overrides for typography */
+.navbar-brand,
+.navbar-nav .nav-link,
+.dropdown-item,
+.btn,
+.form-control,
+.form-label,
+.alert,
+.card-title,
+.card-text,
+.list-group-item,
+.breadcrumb,
+.pagination {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+/* Specific component overrides */
+.navbar-brand {
+  font-weight: 700 !important;
+  font-size: 1.5rem !important;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+}
+
+.dropdown-item {
+  font-weight: 400 !important;
+  font-size: 0.95rem !important;
+}
+
+.btn {
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+  letter-spacing: 0.025em !important;
+}
+
+.form-control {
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+}
+
+.form-label {
+  font-weight: 500 !important;
+  font-size: 0.95rem !important;
+}
+
+.alert {
+  font-weight: 400 !important;
+  font-size: 0.95rem !important;
+}
+
+.card-title {
+  font-weight: 600 !important;
+  font-size: 1.25rem !important;
+}
+
+.card-text {
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+}
+
+/* Table typography */
+table, th, td {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+th {
+  font-weight: 600 !important;
+  font-size: 0.95rem !important;
+}
+
+td {
+  font-weight: 400 !important;
+  font-size: 0.95rem !important;
+}
+
+/* Modal typography */
+.modal-title {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 1.25rem !important;
+}
+
+.modal-body {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+}
+
+/* Footer typography */
+footer, .footer {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 0.9rem !important;
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px !important;
+  }
+  
+  h1 { font-size: 2rem !important; }
+  h2 { font-size: 1.75rem !important; }
+  h3 { font-size: 1.5rem !important; }
+  h4 { font-size: 1.25rem !important; }
+  h5 { font-size: 1.1rem !important; }
+  h6 { font-size: 1rem !important; }
+  
+  .navbar-brand {
+    font-size: 1.25rem !important;
+  }
+  
+  .btn {
+    font-size: 0.95rem !important;
+  }
+  
+  .form-control {
+    font-size: 0.95rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 13px !important;
+  }
+  
+  h1 { font-size: 1.75rem !important; }
+  h2 { font-size: 1.5rem !important; }
+  h3 { font-size: 1.25rem !important; }
+  h4 { font-size: 1.1rem !important; }
+  h5 { font-size: 1rem !important; }
+  h6 { font-size: 0.95rem !important; }
+  
+  .btn {
+    font-size: 0.9rem !important;
+  }
+  
+  .form-control {
+    font-size: 0.9rem !important;
+  }
+}
+
+/* Special font for decorative elements */
+.decorative-font {
+  font-family: 'Roboto', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-weight: 300 !important;
+}
+
+/* Additional font improvements for better rendering */
+.article-title,
+.article-content,
+.blog-content,
+.comment-content {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-weight: 400 !important;
+  line-height: 1.7 !important;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Improve Vietnamese text rendering */
+.vietnamese-text {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
+  letter-spacing: 0.01em !important;
+}
+
+/* Fix for specific components that might have font issues */
+.title-index,
+.title-form-coment,
+.article-main .article-title,
+.blog_noibat h2,
+.aside-content-blog .title-head-col {
+  font-family: 'Inter', 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-weight: 600 !important;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Font weights utility classes */
+.font-light { font-weight: 300 !important; }
+.font-normal { font-weight: 400 !important; }
+.font-medium { font-weight: 500 !important; }
+.font-semibold { font-weight: 600 !important; }
+.font-bold { font-weight: 700 !important; }
+
+/* Text sizes utility classes */
+.text-xs { font-size: 0.75rem !important; }
+.text-sm { font-size: 0.875rem !important; }
+.text-base { font-size: 1rem !important; }
+.text-lg { font-size: 1.125rem !important; }
+.text-xl { font-size: 1.25rem !important; }
+.text-2xl { font-size: 1.5rem !important; }
+.text-3xl { font-size: 1.875rem !important; }
+.text-4xl { font-size: 2.25rem !important; }
+
+/* Line height utility classes */
+.leading-tight { line-height: 1.25 !important; }
+.leading-snug { line-height: 1.375 !important; }
+.leading-normal { line-height: 1.5 !important; }
+.leading-relaxed { line-height: 1.625 !important; }
+.leading-loose { line-height: 2 !important; }
+
+/* Letter spacing utility classes */
+.tracking-tighter { letter-spacing: -0.05em !important; }
+.tracking-tight { letter-spacing: -0.025em !important; }
+.tracking-normal { letter-spacing: 0em !important; }
+.tracking-wide { letter-spacing: 0.025em !important; }
+.tracking-wider { letter-spacing: 0.05em !important; }
+.tracking-widest { letter-spacing: 0.1em !important; } 
